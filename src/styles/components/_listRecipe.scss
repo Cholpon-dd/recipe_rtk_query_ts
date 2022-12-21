@@ -1,0 +1,30 @@
+.cards {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
+  padding-top: 30px;
+}
+.card {
+
+  &__image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__content {
+    line-height: 1.3;
+    font-size: 0.7em;
+    padding: 15px;
+    background: #fffcf2;
+    /* color: #e26d5c; */
+    color: #bb4d00;
+    height: 110px;
+  }
+}
