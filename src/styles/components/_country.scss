@@ -1,0 +1,34 @@
+.country__title {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 32px;
+  color: $title-color;
+}
+
+.active {
+  color: #f27121;
+}
+
+.country__container {
+  width: 45%;
+  margin: 50px auto;
+
+  p {
+    padding-left: 24px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: $card-color;
+
+    &:hover{
+      color: #bb4d00;
+      font-size: 18px;
+    }
+  }
+
+}
+.country__card {
+    width: 100px;
+    height: 74px;
+
+
+  }

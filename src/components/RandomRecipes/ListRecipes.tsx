@@ -7,7 +7,7 @@ const ListRecipes = ({data} : {data: Recipe}) => {
             <div className="card">
                 <img src={data?.image} alt="recipe-image" className="card__image"/>
                 <div className="card__content">
-                    <h2>{data?.title}</h2>
+                    <h4>{data?.title}</h4>
                 </div>
             </div>
 

@@ -13,7 +13,6 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "preserveSymlinks": false,
     "noEmit": true,
     "jsx": "react-jsx"
   },
