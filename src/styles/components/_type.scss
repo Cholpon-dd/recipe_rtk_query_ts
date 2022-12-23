@@ -1,0 +1,53 @@
+.type__container{
+  width: 58%;
+  margin: 0 auto;
+
+  a {
+    img {
+      width: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  p {
+    text-align: center;
+    //margin-top: 10px;
+    font-size: 16px;
+    color: $card-color;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-width: 400;
+
+    &:hover{
+      color: #0a2650;
+      font-size: 18px;
+    }
+  }
+
+}
+.type__wrapper{
+margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr  1fr 1fr;
+  //grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    "breakfast dessert salad"
+    "drinks    dessert soup"
+    ". . .";
+
+}
+.breakfast { grid-area: breakfast; }
+
+.drinks img{
+  height: 186px ;
+  grid-area: drinks;
+}
+.dessert { grid-area: dessert; }
+.soup { grid-area: soup; }
+.salad { grid-area: salad; }
+
+.type__name{
+  text-align: center;
+}

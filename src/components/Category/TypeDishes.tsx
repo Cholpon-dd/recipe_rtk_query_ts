@@ -1,8 +1,8 @@
-import React from 'react';
-import {ISearch, ISearchResponse} from "../../models/search";
+import {ISearchResponse} from "../../models/search";
+import React from "react";
 
 type Props = { data: ISearchResponse}
-const CountryDishes = ({ data } : Props) => {
+const TypeDishes = ({ data } : Props) => {
     return (
         <div className="card">
             <img src={data?.image} alt="recipe-image" className="card__image"/>
@@ -13,4 +13,4 @@ const CountryDishes = ({ data } : Props) => {
     );
 };
 
-export default CountryDishes;
+export default TypeDishes;

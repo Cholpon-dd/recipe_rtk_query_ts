@@ -8,7 +8,7 @@ const Cuisine = () => {
     const {data} = useGetCountryRecipesQuery(country!)
 
     return (
-        <div className="cuisine__cards">
+        <div className="cards">
             {data?.results.slice(1, 13).map((item) => {
                 return <CountryDishes key={item.id} data={item}/>
             })}

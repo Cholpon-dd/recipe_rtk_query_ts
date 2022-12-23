@@ -14,13 +14,15 @@
   margin: 50px auto;
 
   p {
-    padding-left: 24px;
+    padding-left: 16px;
     margin-top: 10px;
     font-size: 16px;
     color: $card-color;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
     &:hover{
-      color: #bb4d00;
+      color: #0a2650;
       font-size: 18px;
     }
   }
