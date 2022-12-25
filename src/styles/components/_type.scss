@@ -11,13 +11,13 @@
   }
 
   p {
-    text-align: center;
+    //text-align: center;
     //margin-top: 10px;
     font-size: 16px;
     color: $card-color;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-width: 400;
+    font-weight: 600;
 
     &:hover{
       color: #0a2650;
@@ -27,7 +27,7 @@
 
 }
 .type__wrapper{
-margin-top: 50px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr  1fr 1fr;
   //grid-template-rows: 1fr 1fr 1fr;
@@ -38,16 +38,63 @@ margin-top: 50px;
     ". . .";
 
 }
-.breakfast { grid-area: breakfast; }
-
-.drinks img{
-  height: 186px ;
+.breakfast {
+  grid-area: breakfast;
+  position: relative;
+}
+.breakfast__desc, {
+  position: absolute;
+  /* top: 8px; */
+  bottom: 14px;
+  left: 92px;
+}
+.drinks{
+  position: relative;
+}
+.drinks__desc{
+  position: absolute;
+  bottom: 14px;
+  left: 92px;
+}
+.drinks img {
+  height: 186px;
   grid-area: drinks;
 }
-.dessert { grid-area: dessert; }
-.soup { grid-area: soup; }
-.salad { grid-area: salad; }
-
-.type__name{
-  text-align: center;
+.dessert {
+  grid-area: dessert;
+  //height: 402px;
+  //height: 240px;
+  position: relative;
 }
+.dessert img {
+  height: 401px;
+}
+.dessert__desc {
+  position: absolute;
+  left: 100px;
+  bottom: 13px;
+  //bottom: -152px;
+}
+.soup {
+  grid-area: soup;
+  position: relative;
+}
+.soup__desc {
+  position: absolute;
+  bottom: 16px;
+  left: 124px;
+}
+.salad {
+  grid-area: salad;
+  position: relative;
+}
+.salad__desc{
+  position: absolute;
+  left: 110px;
+  bottom: 16px;
+}
+
+//.type__name{
+//  text-align: center;
+//}
+

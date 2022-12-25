@@ -1,6 +1,7 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/dist/query/react";
 import {IRecipe} from "../models/models";
 import {ISearch} from "../models/search";
+import {IDetailRecipe} from "../models/details";
 
 const BASE_URL = `https://api.spoonacular.com/recipes/`
 export const recipeApi = createApi({
@@ -37,9 +38,17 @@ export const recipeApi = createApi({
                     number: 16
                 }
             })
+        }),
+        getDetailRecipe: build.query<IDetailRecipe, number | string>({
+            query: (id) => ({
+                url: `${id}/information`,
+                params: {
+                    apiKey: import.meta.env.VITE_API_KEY_REACT,
+                }
+            })
         })
     })
 })
 
 export const { useGetRandomRecipesQuery, useGetCountryRecipesQuery,
-useGetTypesRecipesQuery} = recipeApi
+useGetTypesRecipesQuery, useGetDetailRecipeQuery} = recipeApi

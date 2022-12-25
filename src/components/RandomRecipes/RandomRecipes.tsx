@@ -6,6 +6,7 @@ import RandomRecipesSkeleton from "./RandomRecipesSkeleton";
 const RandomRecipes = () => {
     const {data, isLoading, isError} = useGetRandomRecipesQuery(12)
 
+    // @ts-ignore
     return (
         <>
             <h2 className="country__title">Random recipes</h2>

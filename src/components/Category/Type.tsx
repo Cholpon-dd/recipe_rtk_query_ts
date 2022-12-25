@@ -9,40 +9,27 @@ const Type = () => {
         <div className="type__container">
             <h2 className="country__title">Popular Categories</h2>
             <div className="type__wrapper">
-                {/*<div>*/}
                 <NavLink to={'/category/breakfast'} className="breakfast">
                     <img src={breakfast} alt=""  />
-                    <p className="type__name">Breakfast</p>{' '}
+                    <p className="breakfast__desc">Breakfast</p>{' '}
                 </NavLink>
-
-                {/*</div>*/}
-                {/*<div>*/}
                     <NavLink to={'/category/dessert'} className="dessert">
                          <img src={dessert} alt=""  />
-                        <p>Dessert</p>
+                        <p className="dessert__desc">Dessert</p>
                     </NavLink>
-                {/*</div>*/}
-                {/*<div>*/}
-
                     <NavLink to={'/category/salad'} className="salad" >
                          <img src={salad} alt="" />
-                        <p>Salad</p>{' '}
+                        <p className="salad__desc">Salad</p>{' '}
                     </NavLink>
-                {/*</div>*/}
-                {/*<div>*/}
                 <NavLink to={'/category/beverage'} className="drinks" >
                     <img src={beverage} alt="beverage" />
-                    <p>Beverage</p>{' '}
+                    <p className="drinks__desc">Beverage</p>{' '}
                 </NavLink>
-                {/*</div>*/}
-                {/*<div>*/}
                     <NavLink to={'/category/soup'} className="soup" >
                          <img src={soup} alt="" />
-                        <p>Soup</p>{' '}
+                        <p className="soup__desc">Soup</p>{' '}
                     </NavLink>
-                {/*</div>*/}
             </div>
-            
         </div>
     );
 };

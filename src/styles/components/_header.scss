@@ -1,0 +1,44 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffd7ba;
+  padding: 10px 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  //color: $title-color;
+}
+
+.logo {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bolder;
+
+  p{
+    color: #c75146;
+  }
+
+}
+
+.logo_svg {
+  margin-left: 8px;
+}
+
+.navbar a {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0 1.5rem;
+  color: #c75146;
+
+}
+
+.navbar a :hover {
+  animation: push-app ease both;
+  animation-delay: 1s;
+}
+

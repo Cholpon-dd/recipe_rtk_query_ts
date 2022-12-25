@@ -5,11 +5,11 @@ import Type from "../components/Category/Type";
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Country/>
             <Type/>
             <RandomRecipes/>
-        </div>
+        </>
     );
 };
 

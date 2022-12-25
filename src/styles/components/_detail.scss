@@ -1,0 +1,119 @@
+.detail__wrapper{
+  height: 500px;
+  width: 800px;
+  margin: 80px auto;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.15);
+}
+.detail__wrapper::-webkit-scrollbar{
+  width: 8px;
+}
+.detail__title{
+  padding-top: 24px;
+  font-size: 32px;
+  color: #474747;
+  text-align: center;
+}
+.detail__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+}
+.detail__description{
+  width: 400px;
+  height: 486px;
+
+}
+.detail__description::-webkit-scrollbar{
+  width: 5px;
+}
+.detail__description::-webkit-scrollbar-track{
+  border-radius: 8px;
+}
+.detail__description::-webkit-scrollbar-thumb {
+  background: #CFCFCF;
+  border-radius: 8px;
+}
+.detail__card {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+
+}
+.detail__img{
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.full__description{
+  margin: 0 3px 0 0;
+  color: #625959;;
+  line-height: 1.5em;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.detail__btn{
+  margin: 14px 5px 12px 2px;
+  box-sizing: border-box;
+  border: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: tomato;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  padding: 8px;
+  transition:all ease-in-out .2s;
+
+}
+
+.active {
+  /* background: tomato; */
+  /* color: white; */
+  color: red;
+  margin: 14px 5px 12px 2px;
+  box-sizing: border-box;
+  border: transparent;
+  background: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  /* outline: none; */
+  padding: 8px;
+  border-bottom: 2px solid tomato;
+}
+
+ol {
+  list-style: none;
+  counter-reset: steps;
+}
+
+ol li {
+  counter-increment: steps;
+}
+
+ol li::before {
+  content: counter(steps);
+  margin-right: 0.5rem;
+  margin-top: 4px;
+  background: #ff6f00;
+  color: #fff;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1.2em;
+}
