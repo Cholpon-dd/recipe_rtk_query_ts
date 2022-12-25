@@ -9,6 +9,7 @@
   -webkit-box-shadow: 5px 7px 5px 3px rgba(204,204,204,1);
   -moz-box-shadow: 5px 7px 5px 3px rgba(204,204,204,1);
   box-shadow: 5px 7px 5px 3px rgba(204,204,204,1);
+  border-radius: 10px;
   &__image {
    @include image;
 
@@ -21,5 +22,21 @@
     background-color: $card-background;
     color: $card-color;
     height: 110px;
+  }
+  &__info {
+    @include card-info;
+
+    .clock{
+      width: 24px;
+      height: 24px;
+      fill: red;
+    }
+
+    .heart{
+      @include iconHeart;
+    }
+  }
+  &__link{
+    @include link;
   }
 }

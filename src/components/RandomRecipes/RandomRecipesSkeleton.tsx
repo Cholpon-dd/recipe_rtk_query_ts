@@ -2,6 +2,10 @@ import React from "react";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
+// interface Props {
+//     children?: React.ReactNode;
+//     cards: number
+// }
 
 const RandomRecipesSkeleton = ({cards} : {cards: number}) => {
     const skeleton =  Array(cards).fill(0)
