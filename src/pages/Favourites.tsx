@@ -17,7 +17,11 @@ const Favourites = () => {
                 return (
                     <div key={item.id} className="fav_card">
                         <img src={item.image} alt="image" className="favcard__image" />
+
                         <h4 className="favcard__content">{item.title}</h4>
+
+                        <div className="favcard__content">{item.title}</div>
+
                         <div className="favcard__info">
                             <div>
                                 <CiStopwatch className="clock" />
