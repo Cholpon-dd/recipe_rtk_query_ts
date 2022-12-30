@@ -1,6 +1,7 @@
 import {useParams} from "react-router-dom";
 import {useGetDetailRecipeQuery} from "../../services/recipe.api";
 import {useState} from "react";
+import Placeholder from '../../assets/image/default.jpg'
 
 
 const Details = () => {
@@ -10,14 +11,14 @@ const Details = () => {
 
     const [activeTabs, setActiveTabs] = useState('description')
 
-    // @ts-ignore
-    // @ts-ignore
     return (
         <div className="detail__wrapper">
             <h3 className="detail__title">{data?.title}</h3>
             <div className="detail__container">
                 <div className="detail__card">
-                    <img src={data?.image} alt="" className="detail__img" />
+                    {data?.image ? ( <img src={data?.image} alt="image" className="detail__img" />)
+                    : (<img src={Placeholder} alt="default-image" className="detail__img"/>)}
+
                 </div>
                 <div className="detail__description">
                     <button

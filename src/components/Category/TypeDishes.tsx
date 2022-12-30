@@ -3,6 +3,7 @@ import {useActions} from "../../hooks/useActions";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
 import {Link} from 'react-router-dom'
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
+import placeholder from '../../assets/image/default.jpg'
 
 
 const TypeDishes = ({ data } : {data: Recipe}) => {
@@ -13,7 +14,8 @@ const TypeDishes = ({ data } : {data: Recipe}) => {
 
     return (
         <div className="countrys__card">
-            <img src={data?.image} alt="recipe-image" className="card__image"/>
+            {data?.image ? (<img src={data?.image} alt="recipe-image" className="card__image"/>)
+                : (<img src={placeholder} alt="default-image" className="card__image"/>)}
             <div className="card__content">
                 <h4>{data?.title}</h4>
             </div>

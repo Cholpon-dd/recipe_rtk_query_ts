@@ -4,6 +4,7 @@ import {useActions} from "../../hooks/useActions";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
 import {FaHeart, FaRegHeart} from "react-icons/fa";
 import {Link} from "react-router-dom";
+import placeholder from "../../assets/image/default.jpg";
 
 
 const CountryDishes = ({ data } : {data: Recipe}) => {
@@ -14,7 +15,8 @@ const CountryDishes = ({ data } : {data: Recipe}) => {
 
     return (
         <div className="countrys__card">
-            <img src={data?.image} alt="recipe-image" className="card__image"/>
+            {data?.image ? (<img src={data?.image} alt="recipe-image" className="card__image"/>)
+                : (<img src={placeholder} alt="default-image" className="card__image"/>)}
             <div className="card__content">
                 <h4>{data?.title}</h4>
             </div>

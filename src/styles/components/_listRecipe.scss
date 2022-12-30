@@ -38,5 +38,12 @@
   }
   &__link{
     @include link;
+
+    &:hover {
+      text-decoration: underline;
+      transition: .5s;
+
+    }
+
   }
 }

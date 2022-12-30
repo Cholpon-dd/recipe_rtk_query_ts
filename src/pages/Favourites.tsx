@@ -4,6 +4,7 @@ import {useTypedSelector} from "../hooks/useTypedSelector";
 import {useActions} from "../hooks/useActions";
 import { IoClose } from 'react-icons/io5';
 import {CiStopwatch} from "react-icons/ci";
+import placeholder from '../assets/image/default.jpg'
 
 const Favourites = () => {
 
@@ -16,12 +17,9 @@ const Favourites = () => {
             {favourites.map((item) => {
                 return (
                     <div key={item.id} className="fav_card">
-                        <img src={item.image} alt="image" className="favcard__image" />
-
+                        {item.image ? (<img src={item.image} alt="image" className="favcard__image" />)
+                        : (<img src={placeholder} alt="default-image" className="favcard__image"/>)}
                         <h4 className="favcard__content">{item.title}</h4>
-
-                        <div className="favcard__content">{item.title}</div>
-
                         <div className="favcard__info">
                             <div>
                                 <CiStopwatch className="clock" />

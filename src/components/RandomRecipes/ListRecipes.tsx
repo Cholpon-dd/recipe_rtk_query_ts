@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import { CiStopwatch } from 'react-icons/ci';
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
 import {useTypedSelector} from "../../hooks/useTypedSelector";
+import Placeholder from '../../assets/image/default.jpg'
 
 const ListRecipes = ({data} : {data: Recipe}) => {
 
@@ -15,7 +16,11 @@ const ListRecipes = ({data} : {data: Recipe}) => {
     return (
         <>
             <div className="card">
-                <img src={data?.image} alt="recipe-image" className="card__image"/>
+                {data?.image ? (<img src={data?.image} alt="recipe-image" className="card__image"/>)
+                    :
+                    (<img src={Placeholder} alt="default-image" className="card__image" />)}
+
+                {/*<img src={data?.image} alt="recipe-image" className="card__image"/>*/}
                 <div className="card__content">
                     <h4>{data?.title}</h4>
                 </div>
