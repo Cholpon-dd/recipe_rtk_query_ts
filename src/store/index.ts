@@ -5,7 +5,7 @@ import {favouritesReducer} from "./favouriteSlice";
 
 export const store = configureStore({
     reducer: {
-        [recipeApi.reducerPath] : recipeApi.reducer,
+        [recipeApi.reducerPath]: recipeApi.reducer,
         favourites: favouritesReducer
     },
     middleware: getDefaultMiddleware => getDefaultMiddleware().concat(recipeApi.middleware)

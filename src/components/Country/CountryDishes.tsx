@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 import placeholder from "../../assets/image/default.jpg";
 
 
-const CountryDishes = ({ data } : {data: Recipe}) => {
+const CountryDishes = ({data}: { data: Recipe }) => {
 
     const {addToFavourite} = useActions()
     const {favourites} = useTypedSelector(state => state.favourites)
@@ -23,9 +23,9 @@ const CountryDishes = ({ data } : {data: Recipe}) => {
             <div className="card__info">
                 <div className="add_fav">
                     {isStoredFav ? (
-                        <FaHeart className="heart" />
+                        <FaHeart className="heart"/>
                     ) : (
-                        <FaRegHeart onClick={() => !isStoredFav &&  addToFavourite(data)} className="heart" />
+                        <FaRegHeart onClick={() => !isStoredFav && addToFavourite(data)} className="heart"/>
                     )}
                 </div>
                 <div>

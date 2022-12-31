@@ -1,7 +1,6 @@
 import React from 'react';
 import {Cooking} from "./AboutSvg";
 
-
 const About = () => {
 
     return (
@@ -17,8 +16,6 @@ const About = () => {
                         all about.
                         Our recipes primarily use fresh, unprocessed ingredients but we also believe there is a time and a place for
                         canned, frozen, and other prepared ingredients.
-                        {/*We believe in a diet that includes a wide variety of foods: real butter and cream, extra virgin olive oil, */}
-                        {/*eggs, lots of fruits and vegetables, and protein from meat, fish, beans, and cheese. Plus cake for dessert.*/}
                     </p>
                 </div>
 

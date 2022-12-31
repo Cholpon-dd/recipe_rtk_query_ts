@@ -5,10 +5,10 @@ import Loader from "../components/Loader/Loader";
 
 
 const Category = () => {
-    const {type} = useParams<{type?: string}>()
+    const {type} = useParams<{ type?: string }>()
 
     const {data, isLoading} = useGetTypesRecipesQuery(type!)
-    console.log(data)
+
     return (
         <div className="cards">
             {isLoading && <Loader/>}

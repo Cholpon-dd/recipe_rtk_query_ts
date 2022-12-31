@@ -7,25 +7,27 @@ import Details from "./components/Details/Details";
 import Favourites from "./pages/Favourites";
 import Footer from "./components/Layouts/Footer";
 import NotFound from "./pages/NotFound";
+import SearchResult from "./pages/SearchResult";
 
 function App() {
 
 
-  return (
-    <>
-      <Layouts/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/cuisine/:country" element={<Cuisine/>}/>
-          <Route path="/category/:type" element={<Category/>}/>
-          <Route path="favourites" element={<Favourites/>}/>
-          <Route path="/details/:id" element={<Details/>}/>
-          <Route path="*" element={<NotFound/>}/>
-      </Routes>
-        <Footer/>
+    return (
+        <>
+            <Layouts/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/cuisine/:country" element={<Cuisine/>}/>
+                <Route path="/category/:type" element={<Category/>}/>
+                <Route path="favourites" element={<Favourites/>}/>
+                <Route path="/details/:id" element={<Details/>}/>
+                <Route path="/search/:search" element={<SearchResult/>}/>
+                <Route path="*" element={<NotFound/>}/>
+            </Routes>
+            <Footer/>
 
-    </>
-  )
+        </>
+    )
 }
 
 export default App

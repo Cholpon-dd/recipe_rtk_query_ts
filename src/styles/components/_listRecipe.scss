@@ -34,16 +34,34 @@
 
     .heart{
       @include iconHeart;
+
     }
   }
+
   &__link{
-    @include link;
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    color: #bb3e03;
 
     &:hover {
-      text-decoration: underline;
-      transition: .5s;
-
+      color: #ffffff;
     }
 
   }
 }
+.card__link:after{
+  content: "";
+  position: absolute;
+  background-color: #c75146;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+.card__link:hover:after{
+  width: 100%;
+}
+
+

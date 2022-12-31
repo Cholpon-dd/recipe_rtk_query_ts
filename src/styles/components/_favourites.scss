@@ -1,3 +1,10 @@
+.empty__fav{
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .fav_cards {
   margin: 64px auto;
   max-width: 1000px;
@@ -31,30 +38,25 @@
 }
 .favcard__content {
   line-height: 1.5;
-
   font-size: 16px;
   padding: 15px;
   color: $card-color;
-
-  font-size: 0.9em;
-  padding: 15px;
-
   background: #fff;
           //#fffcf2;
-  height: 100px;
 
+  height: 100px;
 }
 
 
 .favcard__info {
-  padding: 15px;
+  padding: 15px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #555555;
   background: #fec89a;
   //        #f4a261;
-  font-size: 0.8em;
+  font-size: 16px;
   border-radius: 0 0 10px 10px;
 
   .time{
@@ -71,14 +73,26 @@
 
 
 .favcard__link {
-  color: #bb3e03;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
+  position: relative;
+  letter-spacing: 0.5px;
+  color: #bb3e03;
 }
-
-.favcard__link:hover {
-  text-decoration: underline;
+.favcard__link:after {
+  content: "";
+  position: absolute;
+  background-color: #c75146;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+.favcard__link:hover{
+  color: #ffffff;
+}
+.favcard__link:hover:after {
+  width: 100%;
 }
 
 .delete {

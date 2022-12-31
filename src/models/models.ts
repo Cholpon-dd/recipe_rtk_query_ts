@@ -56,7 +56,7 @@
         number: number;
         unit: string;
     }
-/////////////////////////
+
     export interface Step {
         number: number;
         step: string;
@@ -108,6 +108,7 @@
         originalId?: any;
         spoonacularSourceUrl: string;
     }
+
 
     export interface IRecipe{
         recipes: Recipe[];

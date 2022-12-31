@@ -28,6 +28,7 @@
   width: 400px;
   height: 486px;
 
+
 }
 .detail__description::-webkit-scrollbar{
   width: 5px;
@@ -65,10 +66,9 @@
   box-sizing: border-box;
   border: transparent;
   font-size: 12px;
-  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: tomato;
+  color: #c75146;
   background: none;
   cursor: pointer;
   outline: none;
@@ -78,22 +78,19 @@
 }
 
 .active {
-  /* background: tomato; */
-  /* color: white; */
-  color: red;
+  background: #c75146;
+  color: white;
   margin: 14px 5px 12px 2px;
   box-sizing: border-box;
-  border: transparent;
-  background: none;
   font-size: 12px;
-  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   cursor: pointer;
-  /* outline: none; */
   padding: 8px;
-  border-bottom: 2px solid tomato;
+  border: 1px solid tomato;
+  border-radius: 10px;
 }
+
 
 ol {
   list-style: none;

@@ -46,9 +46,19 @@ export const recipeApi = createApi({
                     apiKey: import.meta.env.VITE_API_KEY_REACT,
                 }
             })
+        }),
+        searchRecipe: build.query<ISearch, string>({
+            query: (search) => ({
+                url:  'complexSearch',
+                params: {
+                    apiKey: import.meta.env.VITE_API_KEY_REACT,
+                    query: search,
+                    number: 12
+                }
+            })
         })
     })
 })
 
 export const { useGetRandomRecipesQuery, useGetCountryRecipesQuery,
-useGetTypesRecipesQuery, useGetDetailRecipeQuery} = recipeApi
+useGetTypesRecipesQuery, useGetDetailRecipeQuery, useSearchRecipeQuery} = recipeApi

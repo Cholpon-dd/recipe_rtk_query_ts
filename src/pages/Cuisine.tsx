@@ -5,7 +5,7 @@ import CountryDishes from "../components/Country/CountryDishes";
 import Loader from "../components/Loader/Loader";
 
 const Cuisine = () => {
-    const {country} = useParams<{country? :string}>()
+    const {country} = useParams<{ country?: string }>()
     const {data, isLoading} = useGetCountryRecipesQuery(country!)
 
     return (

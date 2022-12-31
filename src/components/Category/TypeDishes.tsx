@@ -2,11 +2,11 @@ import {Recipe} from "../../models/models";
 import {useActions} from "../../hooks/useActions";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
 import {Link} from 'react-router-dom'
-import { FaRegHeart, FaHeart } from 'react-icons/fa';
+import {FaRegHeart, FaHeart} from 'react-icons/fa';
 import placeholder from '../../assets/image/default.jpg'
 
 
-const TypeDishes = ({ data } : {data: Recipe}) => {
+const TypeDishes = ({data}: { data: Recipe }) => {
 
     const {addToFavourite} = useActions()
     const {favourites} = useTypedSelector(state => state.favourites)
@@ -22,9 +22,9 @@ const TypeDishes = ({ data } : {data: Recipe}) => {
             <div className="card__info">
                 <div className="add_fav">
                     {isStoredFav ? (
-                        <FaHeart className="heart" />
+                        <FaHeart className="heart"/>
                     ) : (
-                        <FaRegHeart onClick={() => !isStoredFav &&  addToFavourite(data)} className="heart" />
+                        <FaRegHeart onClick={() => !isStoredFav && addToFavourite(data)} className="heart"/>
                     )}
                 </div>
                 <div>

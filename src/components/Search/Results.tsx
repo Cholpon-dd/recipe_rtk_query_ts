@@ -1,14 +1,13 @@
 import React from 'react';
-import {Recipe} from "../../models/models";
 import {useActions} from "../../hooks/useActions";
-import {Link} from 'react-router-dom'
-import {CiStopwatch} from 'react-icons/ci';
-import {FaRegHeart, FaHeart} from 'react-icons/fa';
 import {useTypedSelector} from "../../hooks/useTypedSelector";
-import Placeholder from '../../assets/image/default.jpg'
+import Placeholder from "../../assets/image/default.jpg";
+import {FaHeart, FaRegHeart} from "react-icons/fa";
+import {Recipe} from "../../models/models";
+import {Link} from "react-router-dom";
 
-const ListRecipes = ({data}: { data: Recipe }) => {
 
+const Results = ({data}: { data: Recipe }) => {
     const {addToFavourite} = useActions()
     const {favourites} = useTypedSelector(state => state.favourites)
 
@@ -23,12 +22,6 @@ const ListRecipes = ({data}: { data: Recipe }) => {
                     <h4>{data?.title}</h4>
                 </div>
                 <div className="card__info">
-                    <div>
-                        <CiStopwatch className="clock"/>
-                    </div>
-                    <div className="time">
-                        <p>{data?.readyInMinutes} min</p>
-                    </div>
                     <div className="add_fav">
                         {isStoredFav ? (
                             <FaHeart className="heart"/>
@@ -43,9 +36,8 @@ const ListRecipes = ({data}: { data: Recipe }) => {
                     </div>
                 </div>
             </div>
-
         </>
     );
 };
 
-export default ListRecipes;
+export default Results;

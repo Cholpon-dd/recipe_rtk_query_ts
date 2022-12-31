@@ -12,23 +12,23 @@ import India from '../../assets/country/India.svg'
 
 
 const Country = () => {
-    function SampleNextArrow(props: { className: string;  style: any; onClick: any; }) {
-        const { className, style, onClick } = props;
+    function SampleNextArrow(props: { className: string; style: any; onClick: any; }) {
+        const {className, style, onClick} = props;
         return (
             <div
                 className={className}
-                style={{ ...style, display: 'block', background: '#474747' }}
+                style={{...style, display: 'block', background: '#474747'}}
                 onClick={onClick}
             />
         );
     }
 
     function SamplePrevArrow(props: { className: string; style: any; onClick: any; }) {
-        const { className, style, onClick } = props;
+        const {className, style, onClick} = props;
         return (
             <div
                 className={className}
-                style={{ ...style, display: 'block', background: '#474747' }}
+                style={{...style, display: 'block', background: '#474747'}}
                 onClick={onClick}
             />
         );
@@ -75,46 +75,45 @@ const Country = () => {
             <h3 className="country__title">Choose Cuisine</h3>
             <div className="country__container">
                 <Slider {...settings}>
-                <div className="country__name">
-                    <NavLink to={'/cuisine/American'}>
-                        <img src={USA} alt="USA's flag" className="country__card" />
-                        <p>American</p>
-                    </NavLink>
-                </div>
-                <div className="country_name">
-                    <NavLink to={'/cuisine/Italian'}>
-                        <img src={Italy} alt="Italy's flag" className="country__card" />
-                        <p>Italian</p>
-                    </NavLink>
-                </div>
-                <div className="country_name">
-                    <NavLink to={'/cuisine/French'}>
-                        <img src={France} alt="France's flag" className="country__card" />
-                        <p>French</p>
-                    </NavLink>
-                </div>
-                <div className="country_name">
-                    <NavLink to={'/cuisine/Japanese'}>
-                        <img src={Japan} alt="Japan's flag" className="country__card" />
-                        <p>Japanese</p>
-                    </NavLink>
-                </div>
-                <div className="country_name">
-                    <NavLink to={'/cuisine/Chinese'}>
-                        <img src={China} alt="Chinese flag" className="country__card" />
-                        <p>Chinese</p>
-                    </NavLink>
-                </div>
-                <div className="country_name">
-                    <NavLink to={'/cuisine/Indian'}>
-                        <img src={India} alt="India's flag" className="country__card" />
-                        <p>Indian</p>
-                    </NavLink>
-                </div>
+                    <div className="country__name">
+                        <NavLink to={'/cuisine/American'}>
+                            <img src={USA} alt="USA's flag" className="country__card"/>
+                            <p>American</p>
+                        </NavLink>
+                    </div>
+                    <div className="country_name">
+                        <NavLink to={'/cuisine/Italian'}>
+                            <img src={Italy} alt="Italy's flag" className="country__card"/>
+                            <p>Italian</p>
+                        </NavLink>
+                    </div>
+                    <div className="country_name">
+                        <NavLink to={'/cuisine/French'}>
+                            <img src={France} alt="France's flag" className="country__card"/>
+                            <p>French</p>
+                        </NavLink>
+                    </div>
+                    <div className="country_name">
+                        <NavLink to={'/cuisine/Japanese'}>
+                            <img src={Japan} alt="Japan's flag" className="country__card"/>
+                            <p>Japanese</p>
+                        </NavLink>
+                    </div>
+                    <div className="country_name">
+                        <NavLink to={'/cuisine/Chinese'}>
+                            <img src={China} alt="Chinese flag" className="country__card"/>
+                            <p>Chinese</p>
+                        </NavLink>
+                    </div>
+                    <div className="country_name">
+                        <NavLink to={'/cuisine/Indian'}>
+                            <img src={India} alt="India's flag" className="country__card"/>
+                            <p>Indian</p>
+                        </NavLink>
+                    </div>
                 </Slider>
             </div>
         </>
-
     );
 };
 
