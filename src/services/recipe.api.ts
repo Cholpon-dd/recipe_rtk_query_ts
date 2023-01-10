@@ -4,6 +4,7 @@ import {ISearch} from "../models/search";
 import {IDetailRecipe} from "../models/details";
 
 const BASE_URL = `https://api.spoonacular.com/recipes/`
+
 export const recipeApi = createApi({
     reducerPath: 'recipe/api',
     baseQuery: fetchBaseQuery({
