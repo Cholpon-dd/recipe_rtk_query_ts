@@ -5,7 +5,7 @@ import Search from "../components/Search/Search";
 const HeroSection = () => {
     return (
         <section className="hero__wrapper" style={{
-            backgroundImage:'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../../public/main.jpg)',
+            backgroundImage:'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(/main.jpg)',
             backgroundSize:'cover',
             backgroundRepeat:'no-repeat',
             backgroundPosition:'center',
