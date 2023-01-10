@@ -1,6 +1,7 @@
+import {ISearchResponse} from "./search";
 
 
-    export interface Us {
+export interface Us {
         amount: number;
         unitShort: string;
         unitLong: string;
@@ -107,11 +108,19 @@
         analyzedInstructions: AnalyzedInstruction[];
         originalId?: any;
         spoonacularSourceUrl: string;
+
     }
 
 
     export interface IRecipe{
+        title: string;
+        image: string;
+        imageType: string;
+        id: number;
         recipes: Recipe[];
+        results: ISearchResponse[]
+
+
     }
 
 

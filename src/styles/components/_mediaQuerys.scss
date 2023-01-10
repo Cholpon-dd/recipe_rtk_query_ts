@@ -1,0 +1,582 @@
+
+@media screen and (min-width:320px) {
+  .header {
+    width:100%;
+  }
+  .logo .logo__title {
+    font-size: 14px;
+  }
+
+  a.logo {
+    font-size: 14px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+  .hero__container{
+    width: 100%;
+  }
+  .hero__title{
+    font-size: 24px;
+    padding-top: 44px;
+    width: 250px;
+  }
+  .hero__sub{
+    font-size: 20px;
+    width: 248px;
+  }
+  .search{
+    width: 400px;
+  }
+  .search__input{
+    width: 54%;
+  }
+  .search__icon{
+    right: 102px;
+  }
+
+  .country__title{
+    font-size: 24px;
+  }
+  .type__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "breakfast"
+            "dessert"
+            "drinks"
+            "salad"
+            "soup";
+
+  }
+  .breakfast__desc,.drinks__desc, .dessert__desc {
+    left: 62px;
+  }
+  .soup__desc,.salad__desc{
+    left: 83px;
+  }
+  .type__container a img {
+    width: 100%;
+  }
+  .dessert img {
+    height: 186px;
+  }
+
+  .cards {
+    max-width: 235px;
+    grid-template-columns: 1fr;
+  }
+
+  .about__section {
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+  }
+  .about__section svg{
+    width: 250px;
+  }
+  .fav_card{
+    width: 67%;
+    margin: 0 auto;
+  }
+  .detail__wrapper{
+    width: 350px;
+  }
+  .detail__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .detail__description{
+    width: 300px;
+    height: 486px;
+  }
+  .detail__title{
+    font-size: 20px;
+  }
+  .detail__btn {
+    margin: 0;
+    font-size: 10px;
+  }
+  .active{
+    padding: 4px;
+    font-size: 10px;
+  }
+  .detail__img{
+    width: 260px;
+  }
+  .footer{
+    width: 100%;
+  }
+}
+@media screen and (min-width:375px) {
+  .header {
+    width:100%;
+  }
+  .logo .logo__title {
+    font-size: 14px;
+  }
+
+  a.logo {
+    font-size: 14px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+  .hero__container{
+    width: 100%;
+  }
+  .hero__title{
+    font-size: 24px;
+    padding-top: 44px;
+  }
+  .hero__sub{
+    font-size: 20px;
+  }
+  .search{
+    width: 400px;
+  }
+  .search__input{
+    width: 54%;
+  }
+  .search__icon{
+    right: 102px;
+  }
+
+  .country__title{
+    font-size: 24px;
+  }
+  .type__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "breakfast"
+            "dessert"
+            "drinks"
+            "salad"
+            "soup";
+
+  }
+  .breakfast__desc,.drinks__desc, .dessert__desc {
+    left: 62px;
+  }
+  .soup__desc,.salad__desc{
+    left: 83px;
+  }
+  .type__container a img {
+    width: 100%;
+  }
+  .dessert img {
+    height: 186px;
+  }
+
+  .cards {
+    max-width: 235px;
+    grid-template-columns: 1fr;
+  }
+
+  .about__section {
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+  }
+  .about__section svg{
+    width: 250px;
+  }
+  .fav_card{
+    width: 67%;
+    margin: 0 auto;
+  }
+  .detail__wrapper{
+    width: 350px;
+  }
+  .detail__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .detail__description{
+    width: 300px;
+    height: 486px;
+  }
+  .detail__title{
+    font-size: 20px;
+  }
+  .detail__btn {
+    margin: 0;
+    font-size: 10px;
+  }
+  .active{
+    padding: 4px;
+    font-size: 10px;
+  }
+  .detail__img{
+    width: 260px;
+  }
+  .footer{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:425px) {
+  .header {
+    width: 100%;
+
+  }
+
+   .logo__title {
+    font-size: 14px;
+  }
+
+  a.logo {
+    font-size: 14px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .hero__wrapper {
+    width: 100%
+  }
+
+  .hero__title {
+    font-size: 24px;
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .hero__sub {
+    font-size: 20px;
+  }
+
+  .search {
+    width: 380px;
+  }
+  .search__input {
+    width: 60%;
+  }
+
+  .search__icon{
+    right: 84px;
+  }
+
+  .type__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "breakfast"
+            "dessert"
+            "drinks"
+            "salad"
+            "soup";
+
+  }
+  .type__container a img {
+    width: 100%;
+  }
+
+  .dessert img {
+    height: 186px;
+  }
+  .breakfast__desc{
+    left: 62px;
+  }
+  .drinks__desc, .dessert__desc{
+    left: 84px;
+  }
+  .salad__desc{
+    left: 94px;
+  }
+  .soup__desc{
+    left: 98px;
+  }
+  .country__title {
+    font-size: 20px;
+  }
+
+  .cards {
+    max-width: 245px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .about__section {
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+  }
+
+.detail__wrapper{
+  width: 400px;
+}
+  .detail__container{
+    display: grid;
+    grid-template-columns: 1fr;
+   padding: 10px;
+  }
+  .detail__title{
+    font-size: 24px;
+  }
+  .fav_card{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .footer {
+    width: 100%;
+  }
+}
+@media screen and (min-width:768px) {
+  .header {
+    width: 768px;
+  }
+  .logo .logo__title {
+    font-size: 20px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+  }
+  .hero__wrapper {
+    width: 768px;
+  }
+  .hero__title {
+    font-size: 32px;
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .hero__sub {
+    font-size: 20px;
+    width: 60%;
+  }
+  .search__input {
+    width: 60%;
+  }
+
+  .search {
+    width: 600px;
+  }
+
+  .search__icon {
+    right: 130px;
+    top: 38px;
+  }
+  .country__title{
+    font-size: 28px;
+  }
+  .type__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "breakfast dessert"
+            "drinks salad"
+            "soup _";
+    margin: 50px -70px
+  }
+
+  .type__wrapper img {
+    width: 280px;
+    height: 186px;
+  }
+
+  .dessert {
+    height: 193px;
+  }
+  .breakfast__desc,.drinks__desc, .dessert__desc {
+    left: 97px;
+  }
+  .soup__desc,.salad__desc{
+    left: 122px;
+  }
+  .cards {
+    max-width: 532px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card{
+    width: 250px;
+
+  }
+
+  .about__section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about__img {
+    width: 329px;
+  }
+
+  .about__description {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .fav_card {
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .favcard__info {
+    padding: 14px 4px;
+    font-size: 15px;
+  }
+
+  .full__description {
+    font-size: 14px;
+    width: 350px;
+  }
+  .footer {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .header {
+    width: 100%;
+  }
+  .hero__wrapper {
+    width: 100%;
+  }
+  .logo .logo__title {
+    font-size: 22px;
+  }
+
+  .navbar a {
+    font-size: 22px;
+  }
+  .hero__sub{
+    width: 472px;
+  }
+  .type__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 20px;
+    grid-template-areas:
+    "breakfast dessert salad"
+    "drinks    dessert soup"
+    ". . .";
+   margin: 50px -170px;
+
+  }
+
+  .type__wrapper img {
+    width: 280px;
+    height: 186px;
+  }
+  .dessert {
+    grid-area: dessert;
+    position: relative;
+  }
+  .dessert img {
+    height: 401px;
+  }
+  .dessert__desc {
+    position: absolute;
+    left: 100px;
+    bottom: -198px;
+  }
+  .salad__desc{
+    left: 102px;
+  }
+  .cards {
+    margin: 0 auto;
+    max-width: 930px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    font-family: sans-serif;
+    padding-top: 30px;
+  }
+  .detail__wrapper{
+    height: 500px;
+    width: 800px;
+    margin: 80px auto;
+
+  }
+  .detail__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+  }
+  .detail__title{
+    font-size: 32px;
+  }
+  .detail__description{
+    width: 400px;
+    height: 486px;
+  }
+  .detail__btn{
+    margin: 14px 5px 12px 2px;
+    font-size: 12px;
+
+  }
+
+  .active {
+    background: #c75146;
+    color: white;
+    margin: 14px 5px 12px 2px;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid tomato;
+    border-radius: 10px;
+  }
+  .fav_card {
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .footer{
+    width: 100%;
+  }
+
+}
+@media screen and (min-width:1200px){
+  .hero__title{
+    font-size: 42px;
+  }
+  .hero__sub{
+    font-size: 32px;
+    width: 58%;
+  }
+  .search__input{
+    width: 70%;
+  }
+  .search__icon{
+    right: 102px;
+  }
+  .country__title{
+    font-size: 32px;
+  }
+  .type__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 20px;
+    grid-template-areas:
+    "breakfast dessert salad"
+    "drinks    dessert soup"
+    ". . .";
+    margin: 50px auto;
+
+  }
+  .cards{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    font-family: sans-serif;
+    padding-top: 30px;
+  }
+}
+
+
+

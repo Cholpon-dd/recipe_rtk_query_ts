@@ -19,7 +19,7 @@ export const recipeApi = createApi({
                 }
             })
         }),
-        getCountryRecipes: build.query<ISearch, string>({
+        getCountryRecipes: build.query<IRecipe, string>({
             query: (country) => ({
                 url: 'complexSearch',
                 params: {

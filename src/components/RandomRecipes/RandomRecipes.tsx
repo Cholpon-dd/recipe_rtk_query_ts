@@ -11,7 +11,7 @@ const RandomRecipes = () => {
             <h2 className="country__title">Random recipes</h2>
             <div className="cards">
                 {isLoading && <RandomRecipesSkeleton cards={12}/>}
-                {isError && <p style={{textAlign: "center", color: "red"}}>Something went wrong</p>}
+                {isError && <p style={{textAlign: "center", color: "red", fontSize:"24px"}}>Something went wrong</p>}
                 {data?.recipes.map((recipe) => {
                     return <ListRecipes key={recipe.id} data={recipe}/>
                 })}

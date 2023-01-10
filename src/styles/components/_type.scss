@@ -33,12 +33,20 @@
     "breakfast dessert salad"
     "drinks    dessert soup"
     ". . .";
+overflow: hidden;
+}
+.type__wrapper img {
+  transition: .3s ease-in-out;
+}
 
+.type__wrapper img:hover{
+  transform: scale(1.2);
 }
 .breakfast {
   grid-area: breakfast;
   position: relative;
 }
+
 .breakfast__desc, {
   position: absolute;
   bottom: 14px;
