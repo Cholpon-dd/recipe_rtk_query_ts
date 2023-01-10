@@ -12,9 +12,6 @@ const Details = () => {
 
     const [activeTabs, setActiveTabs] = useState('description')
 
-    // @ts-ignore
-    // @ts-ignore
-
     return (
         <div className="detail__wrapper">
             <h3 className="detail__title">{data?.title}</h3>
@@ -47,7 +44,7 @@ const Details = () => {
 
                     {activeTabs === 'description' && (
                         <>
-                            <p dangerouslySetInnerHTML={{__html: data?.summary}} className="full__description"></p>
+                            <p dangerouslySetInnerHTML={{__html: data?.summary}} className="full__description"/>
                         </>
                     )}
 

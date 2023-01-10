@@ -109,13 +109,13 @@
         sourceUrl: string;
         image: string;
         imageType: string;
-        summary: string;
+        summary: string | any;
         cuisines: any[];
         dishTypes: string[];
         diets: any[];
         occasions: string[];
         winePairing: WinePairing;
-        instructions: string;
+        instructions: string | any;
         analyzedInstructions: AnalyzedInstruction[];
         originalId?: any;
         spoonacularSourceUrl: string;
