@@ -39,7 +39,7 @@ export const recipeApi = createApi({
                 }
             })
         }),
-        getDetailRecipe: build.query<IDetailRecipe, number | string>({
+        getDetailRecipe: build.query<IDetailRecipe, number | string >({
             query: (id) => ({
                 url: `${id}/information`,
                 params: {
